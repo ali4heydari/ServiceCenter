@@ -1,5 +1,5 @@
 package interfaces;
 
-public interface Engineable {
+public interface Oily {
     int baseSpeedFactor = -1;
 }

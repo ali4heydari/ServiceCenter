@@ -1,6 +1,7 @@
 package enumerations;
 
 public enum FuelType {
-    Gas,
-    Electricity,
+    NONE,
+    GAS,
+    ELECTRICITY,
 }

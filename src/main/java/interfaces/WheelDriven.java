@@ -1,6 +1,6 @@
 package interfaces;
 
-public interface Wheelable {
+public interface WheelDriven {
     int baseSpeedFactor = -1;
     int wheelCount = -1;
 }

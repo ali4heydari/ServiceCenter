@@ -1,5 +1,5 @@
 package interfaces;
 
-public interface Oilable {
+public interface EngineDriven {
     int baseSpeedFactor = -1;
 }
