@@ -1,7 +1,7 @@
 package interfaces;
 
 import enumerations.FuelType;
-import models.FuelTank;
+import models.vehicles.parts.FuelTank;
 
 public interface FuelDriven {
     FuelType fuelType = FuelType.NONE;
