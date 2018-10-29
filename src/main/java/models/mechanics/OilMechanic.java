@@ -1,4 +1,4 @@
-package models;
+package models.mechanics;
 
 public class OilMechanic extends Mechanic {
 }

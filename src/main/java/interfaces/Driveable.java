@@ -1,5 +1,5 @@
 package interfaces;
 
-public interface Driveble {
+public interface Driveable {
     public void Drive();
 }

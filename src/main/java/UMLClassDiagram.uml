@@ -2,10 +2,109 @@
 <Diagram>
   <ID>JAVA</ID>
   <OriginalElement />
-  <nodes />
+  <nodes>
+    <node x="3.25" y="202.0">models.Car</node>
+    <node x="605.25" y="101.0">models.LandVehicle</node>
+    <node x="0.0" y="0.0">models.WheelDriven</node>
+    <node x="0.0" y="429.0">interfaces.FuelDriven</node>
+    <node x="540.0" y="569.0">models.ServiceCenter</node>
+    <node x="323.75" y="101.0">models.Bike</node>
+    <node x="461.25" y="101.0">models.WateryVehicle</node>
+    <node x="0.0" y="355.0">models.EngineMechanic</node>
+    <node x="209.0" y="429.0">enumerations.FuelType</node>
+    <node x="429.75" y="0.0">models.Vehicle</node>
+    <node x="0.0" y="665.0">interfaces.Upgradeable</node>
+    <node x="185.0" y="569.0">interfaces.Repairable</node>
+    <node x="357.0" y="429.0">interfaces.EngineDriven</node>
+    <node x="364.25" y="180.0">models.Motorbike</node>
+    <node x="578.0" y="429.0">interfaces.Changeable</node>
+    <node x="232.75" y="276.0">models.Mechanic</node>
+    <node x="287.0" y="355.0">models.WheelMechanic</node>
+    <node x="154.0" y="355.0">models.OilMechanic</node>
+    <node x="487.25" y="180.0">models.Boat</node>
+    <node x="439.0" y="355.0">models.FuelMechanic</node>
+    <node x="0.0" y="569.0">models.FuelTank</node>
+    <node x="33.5" y="123.0">models.AbstractCar</node>
+    <node x="364.0" y="569.0">interfaces.Driveble</node>
+    <node x="237.25" y="180.0">models.Motorcycle</node>
+    <node x="88.25" y="202.0">models.ElectricCar</node>
+  </nodes>
   <notes />
-  <edges />
-  <settings layout="Hierarchic Group" zoom="1.0" x="155.0" y="169.5" />
+  <edges>
+    <edge source="models.WheelMechanic" target="models.Mechanic">
+      <point x="0.0" y="-14.5" />
+      <point x="353.0" y="335.0" />
+      <point x="294.0" y="335.0" />
+      <point x="12.25" y="14.5" />
+    </edge>
+    <edge source="models.WateryVehicle" target="models.Vehicle">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="models.Bike" target="models.Vehicle">
+      <point x="0.0" y="-14.5" />
+      <point x="358.75" y="76.0" />
+      <point x="460.9166666666667" y="76.0" />
+      <point x="-62.333333333333314" y="25.5" />
+    </edge>
+    <edge source="models.Motorbike" target="models.Bike">
+      <point x="0.0" y="-14.5" />
+      <point x="415.75" y="155.0" />
+      <point x="376.25" y="155.0" />
+      <point x="17.5" y="14.5" />
+    </edge>
+    <edge source="models.Boat" target="models.WateryVehicle">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="models.AbstractCar" target="models.WheelDriven">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="models.LandVehicle" target="models.Vehicle">
+      <point x="5.6843418860808015E-14" y="-14.5" />
+      <point x="661.25" y="76.0" />
+      <point x="585.5833333333334" y="76.0" />
+      <point x="62.33333333333337" y="25.5" />
+    </edge>
+    <edge source="models.EngineMechanic" target="models.Mechanic">
+      <point x="-2.8421709430404007E-14" y="-14.5" />
+      <point x="66.99999999999997" y="325.0" />
+      <point x="245.0" y="325.0" />
+      <point x="-36.75" y="14.5" />
+    </edge>
+    <edge source="models.ElectricCar" target="models.AbstractCar">
+      <point x="0.0" y="-14.5" />
+      <point x="140.25" y="177.0" />
+      <point x="115.25" y="177.0" />
+      <point x="27.25" y="14.5" />
+    </edge>
+    <edge source="models.FuelMechanic" target="models.Mechanic">
+      <point x="0.0" y="-14.5" />
+      <point x="499.0" y="325.0" />
+      <point x="318.5" y="325.0" />
+      <point x="36.75" y="14.5" />
+    </edge>
+    <edge source="models.Car" target="models.AbstractCar">
+      <point x="0.0" y="-14.5" />
+      <point x="35.75" y="177.0" />
+      <point x="60.75" y="177.0" />
+      <point x="-27.25" y="14.5" />
+    </edge>
+    <edge source="models.OilMechanic" target="models.Mechanic">
+      <point x="0.0" y="-14.5" />
+      <point x="210.5" y="335.0" />
+      <point x="269.5" y="335.0" />
+      <point x="-12.25" y="14.5" />
+    </edge>
+    <edge source="models.Motorcycle" target="models.Bike">
+      <point x="0.0" y="-14.5" />
+      <point x="290.75" y="155.0" />
+      <point x="341.25" y="155.0" />
+      <point x="-17.5" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="609.0" y="325.0" />
   <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
