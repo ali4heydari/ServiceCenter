@@ -5,8 +5,9 @@ import interfaces.Deprecateable;
 import interfaces.Repairable;
 
 
+public class GasEngine extends AbstractUpgradeablePart implements Repairable, Changeable, Deprecateable {
 
-public class Engine extends AbstractUpgradeablePart implements Repairable, Changeable, Deprecateable {
+
     public void change() {
 
 
@@ -20,7 +21,8 @@ public class Engine extends AbstractUpgradeablePart implements Repairable, Chang
 
     }
 
-    public void deprecate() {
+
+    public void deprecate(double distance) {
 
     }
 }

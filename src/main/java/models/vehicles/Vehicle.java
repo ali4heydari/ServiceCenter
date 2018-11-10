@@ -4,23 +4,29 @@ import enumerations.FuelType;
 import models.vehicles.parts.AbstractPart;
 import models.vehicles.parts.AbstractUpgradeablePart;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 
 public abstract class Vehicle {
-    int Id;
-    String typeName;
-    double maxHealth;
-    double maxSpeed;
-    double health;
-    double baseSpeedFactor;
-    FuelType fuelType;
-    LinkedList<AbstractUpgradeablePart> parts;
+    protected int Id;
+    protected static String typeName;
+    protected double totalPassedDistance;
+    protected double maxHealth;
+    protected double maxSpeed;
+    protected double health;
+    protected double baseSpeedFactor;
+    protected static FuelType fuelType;
+    protected static LinkedList<AbstractPart> parts = new LinkedList<>();
 
 
     public void setMaxSpeed() {
-        for (AbstractUpgradeablePart part :
-                this.parts) {
-            this.maxSpeed += part.getSpeedFactor();
+        for (AbstractPart part :
+                parts) {
+            if (part instanceof AbstractUpgradeablePart) {
+                AbstractUpgradeablePart abstractUpgradeablePart = (AbstractUpgradeablePart) part;
+                this.maxSpeed += abstractUpgradeablePart.getSpeedFactor();
+            }
+
         }
     }
 
@@ -34,5 +40,9 @@ public abstract class Vehicle {
 
     public double getMaxSpeed() {
         return maxSpeed;
+    }
+
+    public static void addParts(AbstractPart... abstractParts){
+        parts.addAll(Arrays.asList(abstractParts));
     }
 }

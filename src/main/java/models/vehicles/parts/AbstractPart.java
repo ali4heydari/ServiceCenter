@@ -5,9 +5,10 @@ import models.vehicles.Car;
 import models.vehicles.Vehicle;
 
 public abstract class AbstractPart {
-    double maxHealth;
-    double health;
-    int baseSpeedFactor;
+    protected double totalPassedDistance;
+    protected double maxHealth;
+    protected double health;
+    protected int baseSpeedFactor;
 
 
     public double getMaxHealth() {

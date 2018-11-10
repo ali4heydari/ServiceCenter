@@ -13,7 +13,9 @@ public class Oil extends AbstractUpgradeablePart implements Changeable, Deprecat
 
     }
 
-    public void deprecate() {
 
+    @Override
+    public void deprecate(double distance) {
+        health -= distance ;
     }
 }

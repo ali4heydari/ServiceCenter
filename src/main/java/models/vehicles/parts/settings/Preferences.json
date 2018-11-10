@@ -1,0 +1,144 @@
+{
+  "type" : "object",
+  "Preference": {
+    "type" : "object",
+    "defaultMaxHealth": {
+      "type": "integer",
+      "default": "100"
+    },
+    "electricityPrice": {
+      "type": "number",
+      "default": "1.0"
+    },
+    "gasPrice": {
+      "type": "number",
+      "default": "1.0"
+    },
+    "engineBaseTotalPossibleDistance": {
+      "type": "integer",
+      "default": "50000"
+    },
+    "GasEngineSetting": {
+      "type" : "object",
+      "healthDecrease": {
+        "type": "number",
+        "default": "0.01"
+      },
+      "maxHealthUpgradeIncrease": {
+        "type": "integer",
+        "default": "1.0"
+      },
+      "basePriceFactor": {
+        "type": "integer",
+        "default": "100"
+      },
+      "baseDuration": {
+        "type": "integer",
+        "default": "24"
+      }
+    },
+    "ElectricEngineSetting": {
+      "type" : "object",
+      "healthDecrease": {
+        "type": "number",
+        "default": "0.01"
+      },
+      "maxHealthUpgradeIncrease": {
+        "type": "integer",
+        "default": "40"
+      },
+      "basePriceFactor": {
+        "type": "integer",
+        "default": "100"
+      },
+      "baseDuration": {
+        "type": "integer",
+        "default": "1.0"
+      }
+    },
+    "WheelsSetting": {
+      "type" : "object",
+      "healthDecrease": {
+        "type": "number",
+        "default": "0.05"
+      },
+      "maxHealthUpgradeIncrease": {
+        "type": "integer",
+        "default": "30"
+      },
+      "basePriceFactor": {
+        "type": "integer",
+        "default": "10"
+      },
+      "baseDuration": {
+        "type": "integer",
+        "default": "1"
+      }
+    },
+    "OilSetting": {
+      "type" : "object",
+      "healthDecrease": {
+        "type": "number",
+        "default": "0.01"
+      },
+      "maxHealthUpgradeIncrease": {
+        "type": "integer",
+        "default": "10"
+      },
+      "basePriceFactor": {
+        "type": "integer",
+        "default": "5"
+      },
+      "baseDuration": {
+        "type": "integer",
+        "default": "1"
+      }
+    },
+    "FuelTankSetting": {
+      "type" : "object",
+      "healthDecrease": {
+        "type": "number",
+        "default": "0.0"
+      },
+      "maxHealthUpgradeIncrease": {
+        "type": "number",
+        "default": "0.0"
+      },
+      "capacityIncrease": {
+        "type": "integer",
+        "default": "10"
+      },
+      "basePrice": {
+        "type": "integer",
+        "default": "100"
+      },
+      "baseDuration": {
+        "type": "integer",
+        "default": "2"
+      }
+    },
+    "EngineBattery": {
+      "type" : "object",
+      "healthDecrease": {
+        "type": "number",
+        "default": "0.0"
+      },
+      "maxHealthUpgradeIncrease": {
+        "type": "number",
+        "default": "0.0"
+      },
+      "capacityIncrease": {
+        "type": "integer",
+        "default": "10"
+      },
+      "basePrice": {
+        "type": "integer",
+        "default": "100"
+      },
+      "baseDuration": {
+        "type": "integer",
+        "default": "2"
+      }
+    }
+  }
+}

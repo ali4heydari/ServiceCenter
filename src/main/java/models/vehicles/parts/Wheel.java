@@ -13,7 +13,19 @@ public class Wheel extends AbstractUpgradeablePart implements Changeable, Deprec
 
     }
 
-    public void deprecate() {
+
+    @Override
+    public String toString() {
+        return "Wheel{" +
+                "speedFactor=" + speedFactor +
+                ", level=" + level +
+                ", maxHealth=" + maxHealth +
+                ", health=" + health +
+                ", baseSpeedFactor=" + baseSpeedFactor +
+                '}';
+    }
+
+    public void deprecate(double distance) {
 
     }
 }

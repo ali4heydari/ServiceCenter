@@ -1,5 +1,5 @@
 package interfaces;
 
 public interface Deprecateable {
-    void deprecate();
+    void deprecate(double distance);
 }
