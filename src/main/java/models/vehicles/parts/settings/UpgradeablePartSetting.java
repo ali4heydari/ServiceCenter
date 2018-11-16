@@ -1,40 +1,50 @@
 package models.vehicles.parts.settings;
 
 public abstract class UpgradeablePartSetting {
-    protected static Double healthDecrease;
-    protected static Integer maxHealthUpgradeIncrease;
-    protected static Integer basePriceFactor;
-    protected static Integer baseDuration;
+    public Double healthDecrease;
+    public Integer maxHealthUpgradeIncrease;
+    public Integer basePriceFactor;
+    public Integer baseDuration;
 
-    public static Double getHealthDecrease() {
+    @Override
+    public String toString() {
+        return "UpgradeablePartSetting{" +
+                "healthDecrease=" + healthDecrease +
+                ", maxHealthUpgradeIncrease=" + maxHealthUpgradeIncrease +
+                ", basePriceFactor=" + basePriceFactor +
+                ", baseDuration=" + baseDuration +
+                '}';
+    }
+
+    public Double getHealthDecrease() {
         return healthDecrease;
     }
 
-    public static void setHealthDecrease(Double healthDecrease) {
-        UpgradeablePartSetting.healthDecrease = healthDecrease;
+    public void setHealthDecrease(Double healthDecrease) {
+        this.healthDecrease = healthDecrease;
     }
 
-    public static Integer getMaxHealthUpgradeIncrease() {
+    public Integer getMaxHealthUpgradeIncrease() {
         return maxHealthUpgradeIncrease;
     }
 
-    public static void setMaxHealthUpgradeIncrease(Integer maxHealthUpgradeIncrease) {
-        UpgradeablePartSetting.maxHealthUpgradeIncrease = maxHealthUpgradeIncrease;
+    public void setMaxHealthUpgradeIncrease(Integer maxHealthUpgradeIncrease) {
+        this.maxHealthUpgradeIncrease = maxHealthUpgradeIncrease;
     }
 
-    public static Integer getBasePriceFactor() {
+    public Integer getBasePriceFactor() {
         return basePriceFactor;
     }
 
-    public static void setBasePriceFactor(Integer basePriceFactor) {
-        UpgradeablePartSetting.basePriceFactor = basePriceFactor;
+    public void setBasePriceFactor(Integer basePriceFactor) {
+        this.basePriceFactor = basePriceFactor;
     }
 
-    public static Integer getBaseDuration() {
+    public Integer getBaseDuration() {
         return baseDuration;
     }
 
-    public static void setBaseDuration(Integer baseDuration) {
-        UpgradeablePartSetting.baseDuration = baseDuration;
+    public void setBaseDuration(Integer baseDuration) {
+        this.baseDuration = baseDuration;
     }
 }

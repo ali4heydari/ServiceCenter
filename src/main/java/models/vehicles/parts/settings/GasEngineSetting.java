@@ -12,4 +12,13 @@ public class GasEngineSetting extends UpgradeablePartSetting{
         baseDuration = BASE_DURATION;
     }
 
+    @Override
+    public String toString() {
+        return "GasEngineSetting{" +
+                "healthDecrease=" + healthDecrease +
+                ", maxHealthUpgradeIncrease=" + maxHealthUpgradeIncrease +
+                ", basePriceFactor=" + basePriceFactor +
+                ", baseDuration=" + baseDuration +
+                '}';
+    }
 }

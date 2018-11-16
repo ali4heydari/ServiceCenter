@@ -12,4 +12,14 @@ public class WheelSetting extends UpgradeablePartSetting{
         basePriceFactor = BASE_PRICE_FACTOR;
         baseDuration = BASE_DURATION;
     }
+
+    @Override
+    public String toString() {
+        return "WheelSetting{" +
+                "healthDecrease=" + healthDecrease +
+                ", maxHealthUpgradeIncrease=" + maxHealthUpgradeIncrease +
+                ", basePriceFactor=" + basePriceFactor +
+                ", baseDuration=" + baseDuration +
+                '}';
+    }
 }

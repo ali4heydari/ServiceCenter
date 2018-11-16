@@ -7,11 +7,22 @@ public class EngineBatterySetting extends ContainerPartSetting {
     private static final Integer BASE_PRICE = 100;
     private static final Integer BASE_DURATION = 2;
 
-    {
+     {
         healthDecrease = HEALTH_DECREASE;
         maxHealthUpgradeIncrease = MAX_HEALTH_UPGRADE_INCREASE;
         capacityIncrease = CAPACITY_INCREASE;
         basePrice= BASE_PRICE;
         baseDuration = BASE_DURATION;
+    }
+
+    @Override
+    public String toString() {
+        return "EngineBatterySetting{" +
+                "healthDecrease=" + healthDecrease +
+                ", maxHealthUpgradeIncrease=" + maxHealthUpgradeIncrease +
+                ", capacityIncrease=" + capacityIncrease +
+                ", basePrice=" + basePrice +
+                ", baseDuration=" + baseDuration +
+                '}';
     }
 }

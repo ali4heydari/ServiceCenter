@@ -7,38 +7,22 @@ import com.google.gson.stream.JsonReader;
 import java.io.*;
 
 public class Preference {
-    double defaultMaxHelath;
-    float electricityPrice;
-    float gasPrice;
-    int engineBaseTotalPossibleDistance;
-    GasEngineSetting gasEngineSetting;
-    ElectricEngineSetting electricEngineSetting;
-    WheelSetting wheelSetting;
-    OilSetting oilSetting;
-    FuelTankSetting fuelTankSetting;
-    EngineBatterySetting engineBatterySetting;
-
-    @Override
-    public String toString() {
-        return "Preference{" +
-                "defaultMaxHelath=" + defaultMaxHelath +
-                ", electricityPrice=" + electricityPrice +
-                ", gasPrice=" + gasPrice +
-                ", engineBaseTotalPossibleDistance=" + engineBaseTotalPossibleDistance +
-                ", gasEngineSetting=" + gasEngineSetting +
-                ", electricEngineSetting=" + electricEngineSetting +
-                ", wheelSetting=" + wheelSetting +
-                ", oilSetting=" + oilSetting +
-                ", fuelTankSetting=" + fuelTankSetting +
-                ", engineBatterySetting=" + engineBatterySetting +
-                '}';
-    }
+    public  double defaultMaxHelath = 100;
+    public  float electricityPrice = 1;
+    public  float gasPrice = 1;
+    public  int engineBaseTotalPossibleDistance = 50000;
+    public  GasEngineSetting gasEngineSetting = new GasEngineSetting();
+    public  ElectricEngineSetting electricEngineSetting = new ElectricEngineSetting();
+    public  WheelSetting wheelSetting = new WheelSetting();
+    public  OilSetting oilSetting = new OilSetting();
+    public  FuelTankSetting fuelTankSetting = new FuelTankSetting();
+    public  EngineBatterySetting engineBatterySetting = new EngineBatterySetting();
 
     public Preference loadFromFile(String fileName) {
         Object fromJson = null;
         try {
             JsonReader reader = new JsonReader(new FileReader(fileName));
-            fromJson=new Gson().fromJson(reader, Preference.class);
+            fromJson = new Gson().fromJson(reader, Preference.class);
 
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
@@ -57,5 +41,21 @@ public class Preference {
             e.printStackTrace();
             return false;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Preference{" +
+                "defaultMaxHelath=" + defaultMaxHelath +
+                ", electricityPrice=" + electricityPrice +
+                ", gasPrice=" + gasPrice +
+                ", engineBaseTotalPossibleDistance=" + engineBaseTotalPossibleDistance +
+                ", gasEngineSetting=" + gasEngineSetting +
+                ", electricEngineSetting=" + electricEngineSetting +
+                ", wheelSetting=" + wheelSetting +
+                ", oilSetting=" + oilSetting +
+                ", fuelTankSetting=" + fuelTankSetting +
+                ", engineBatterySetting=" + engineBatterySetting +
+                '}';
     }
 }

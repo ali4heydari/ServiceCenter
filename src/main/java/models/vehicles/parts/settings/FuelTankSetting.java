@@ -14,4 +14,15 @@ public class FuelTankSetting extends ContainerPartSetting {
         basePrice= BASE_PRICE;
         baseDuration = BASE_DURATION;
     }
+
+    @Override
+    public String toString() {
+        return "FuelTankSetting{" +
+                "healthDecrease=" + healthDecrease +
+                ", maxHealthUpgradeIncrease=" + maxHealthUpgradeIncrease +
+                ", capacityIncrease=" + capacityIncrease +
+                ", basePrice=" + basePrice +
+                ", baseDuration=" + baseDuration +
+                '}';
+    }
 }

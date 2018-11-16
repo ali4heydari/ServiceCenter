@@ -1,49 +1,60 @@
 package models.vehicles.parts.settings;
 
 public abstract class ContainerPartSetting {
-    protected static Double healthDecrease;
-    protected static Integer maxHealthUpgradeIncrease;
-    protected static Integer capacityIncrease;
-    protected static Integer basePrice;
-    protected static Integer baseDuration;
+    public Double healthDecrease;
+    public Integer maxHealthUpgradeIncrease;
+    public Integer capacityIncrease;
+    public Integer basePrice;
+    public Integer baseDuration;
 
-    public static Double getHealthDecrease() {
+    @Override
+    public String toString() {
+        return "ContainerPartSetting{" +
+                "healthDecrease=" + healthDecrease +
+                ", maxHealthUpgradeIncrease=" + maxHealthUpgradeIncrease +
+                ", capacityIncrease=" + capacityIncrease +
+                ", basePrice=" + basePrice +
+                ", baseDuration=" + baseDuration +
+                '}';
+    }
+
+    public Double getHealthDecrease() {
         return healthDecrease;
     }
 
-    public static void setHealthDecrease(Double healthDecrease) {
-        ContainerPartSetting.healthDecrease = healthDecrease;
+    public void setHealthDecrease(Double healthDecrease) {
+        this.healthDecrease = healthDecrease;
     }
 
-    public static Integer getMaxHealthUpgradeIncrease() {
+    public Integer getMaxHealthUpgradeIncrease() {
         return maxHealthUpgradeIncrease;
     }
 
-    public static void setMaxHealthUpgradeIncrease(Integer maxHealthUpgradeIncrease) {
-        ContainerPartSetting.maxHealthUpgradeIncrease = maxHealthUpgradeIncrease;
+    public void setMaxHealthUpgradeIncrease(Integer maxHealthUpgradeIncrease) {
+        this.maxHealthUpgradeIncrease = maxHealthUpgradeIncrease;
     }
 
-    public static Integer getCapacityIncrease() {
+    public Integer getCapacityIncrease() {
         return capacityIncrease;
     }
 
-    public static void setCapacityIncrease(Integer capacityIncrease) {
-        ContainerPartSetting.capacityIncrease = capacityIncrease;
+    public void setCapacityIncrease(Integer capacityIncrease) {
+        this.capacityIncrease = capacityIncrease;
     }
 
-    public static Integer getBasePrice() {
+    public Integer getBasePrice() {
         return basePrice;
     }
 
-    public static void setBasePrice(Integer basePrice) {
-        ContainerPartSetting.basePrice = basePrice;
+    public void setBasePrice(Integer basePrice) {
+        this.basePrice = basePrice;
     }
 
-    public static Integer getBaseDuration() {
+    public Integer getBaseDuration() {
         return baseDuration;
     }
 
-    public static void setBaseDuration(Integer baseDuration) {
-        ContainerPartSetting.baseDuration = baseDuration;
+    public void setBaseDuration(Integer baseDuration) {
+        this.baseDuration = baseDuration;
     }
 }
